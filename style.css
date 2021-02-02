@@ -1,0 +1,182 @@
+:root{
+    --main-color: #4d636f;
+    --sec-color : #3a4b53;
+    --color :#7d97a5
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/* start navbar */
+header {
+    color: snow;
+}
+header nav{
+    background-color: var(--main-color) !important;
+    box-shadow: 5px 5px 5px #aaa;
+}
+header nav .navbar-brand{
+    margin-right: 1.5rem;
+}
+header nav .navbar-brand span{
+    margin-right: 1rem;
+}
+header nav .navbar-nav .nav-item .nav-link,header nav .navbar-nav .nav-item.active .nav-link{
+    color: snow;
+    margin-right: 2rem;
+}
+header nav .navbar-nav .dropdown{
+    position: relative;
+}
+header nav .navbar-nav .dropdown .badge{
+    position: absolute;
+    background-color: crimson;
+    top: 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+header nav .navbar-nav .dropdown .dropdown-menu a{
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+}
+header nav .navbar-nav .dropdown .dropdown-menu a:hover{
+    background-color: #aaa;
+}
+.dropdown-toggle::after{
+    margin-left: 1.255em
+}
+/* end navbar */
+/* start section content */
+section#content {
+    margin-top: 4rem;
+}
+section#content .row .personal .card {
+    margin: 2rem 0;
+    box-shadow: -5px -5px 5px #ddd,5px 5px 5px #ddd;
+}
+section#content .row .personal .card h5{
+    margin-top: 0.5rem;
+}
+section#content .row .personal .card img{
+    margin: 0.5rem auto !important;
+}
+section#content .row .personal .card .card-body ul li {
+    margin-bottom: 1rem;
+}
+section#content .row .personal .card .card-body ul li span{
+    margin-right: 1.2rem;
+    color: var(--sec-color);
+}
+@media(max-width:991px){
+    section#content .row .personal .card .card-body ul li{
+        text-align: center;
+    }
+}
+section#content .row .work{
+    background-color: var(--color);
+    color: snow;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+section#content .row .work ul li{
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+@media(max-width:991px){
+    section#content .row .work ul li{
+        text-align: center;
+    }
+}
+section#content .row .work ul li span{
+    margin-right: 1.5rem;
+}
+section#content .row .interests{
+    box-shadow: 5px -5px 5px #ddd,5px 5px 5px #ddd;
+    padding: 1rem;
+}
+@media(max-width:991px){
+    section#content .row .interests{
+        text-align: center;
+    }
+}
+section#content .row .interests  h5{
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+section#content .row .interests .int span{
+    margin-right: 0.2rem;
+    text-transform: capitalize;
+}
+section#content .row .status{
+    margin: 2rem 0;
+    box-shadow: -5px -5px 5px #ddd,5px 5px 5px #ddd;
+    padding: 1rem;
+}
+section#content .row .status h5{
+    color: var(--color);
+}
+section#content .row .status button span{
+    margin-right: 0.5rem;
+}
+/* start card div */
+section#content .row .images{
+    box-shadow: -5px -5px 10px #ddd,5px 5px 10px #ddd;
+    margin-bottom: 2rem;
+}
+section#content .row .images .card{
+    padding: 1.5rem;
+}
+section#content .row .images .card .info{
+    position: relative;
+    padding: 1rem 0;
+}
+section#content .row .images .card .info span.name{
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+section#content .row .images .card .info .min{
+    position: absolute;
+    right: 0;
+    color: var(--color);
+}
+section#content .row .images .card .content{
+    margin-bottom: 1rem;
+}
+section#content .row .images .card .content .imgs{
+    justify-content: space-between;
+}
+section#content .row .images .card .content .imgs .item{
+    flex-basis: 48%;
+}
+section#content .row .images .card .links span{
+    margin-right: 0.8rem;
+}
+section#content .row .card1{
+    margin: 2rem 0;
+    box-shadow: -5px -5px 10px #ddd,5px 5px 10px #ddd;
+}
+section#content .row .card1 .card{
+    padding: 1rem;
+}
+section#content .row .ads ,section#content .row .bug{
+    box-shadow: -5px -5px 5px #ddd,5px 5px 5px #ddd;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* end section content */
